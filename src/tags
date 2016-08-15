@@ -1,0 +1,683 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDOP	opcode.h	/^ADDOP,\/*		y x		x+y  *\/$/;"	e	enum:__anon7
+ADJUST	opcode.h	/^ADJUST,\/*	b	-		-		TOP=BASE+b  *\/$/;"	e	enum:__anon7
+ADJUST0	opcode.h	/^ADJUST0,\/*		-		-		TOP=BASE  *\/$/;"	e	enum:__anon7
+Address	opcode.c	45;"	d	file:
+BUFFER_BLOCK	table.c	21;"	d	file:
+Byte	types.h	/^typedef unsigned char  Byte;  \/* unsigned 8 bits *\/$/;"	t
+Byte	types.h	15;"	d
+CALLFUNC	opcode.h	/^CALLFUNC,\/*	b c	v_b...v_1 f	r_c...r_1	f(v1,...,v_b)  *\/$/;"	e	enum:__anon7
+CLS_current	opcode.c	/^static struct C_Lua_Stack CLS_current = {0, 0, 0};$/;"	v	typeref:struct:C_Lua_Stack	file:
+COLLECTED	fallback.c	/^  enum {LOCK, HOLD, FREE, COLLECTED} status;$/;"	e	enum:ref::__anon1	file:
+CONCOP	opcode.h	/^CONCOP,\/*		y x		x..y  *\/$/;"	e	enum:__anon7
+CREATEARRAY	opcode.h	/^CREATEARRAY,\/*	w	-		newarray(size = w)  *\/$/;"	e	enum:__anon7
+C_Lua_Stack	opcode.c	/^struct C_Lua_Stack {$/;"	s	file:
+Cblocks	opcode.c	/^static struct C_Lua_Stack Cblocks[MAX_C_BLOCKS];$/;"	v	typeref:struct:C_Lua_Stack	file:
+D	luac/luac.c	/^static FILE* D;				\/* output file *\/$/;"	v	file:
+DEBUG	luamem.c	14;"	d	file:
+DIVOP	opcode.h	/^DIVOP,\/*		y x		x\/y  *\/$/;"	e	enum:__anon7
+DumpBlock	luac/dump.c	/^static void DumpBlock(void* b, int size, FILE* D)$/;"	f	file:
+DumpFunction	luac/dump.c	/^void DumpFunction(TFunc* tf, FILE* D)$/;"	f
+DumpHeader	luac/dump.c	/^void DumpHeader(FILE* D)$/;"	f
+DumpSize	luac/dump.c	/^static void DumpSize(int i, FILE* D)$/;"	f	file:
+DumpString	luac/dump.c	/^static void DumpString(char* s, FILE* D)$/;"	f	file:
+DumpStrings	luac/dump.c	/^static void DumpStrings(FILE* D)$/;"	f	file:
+DumpWord	luac/dump.c	/^static void DumpWord(int i, FILE* D)$/;"	f	file:
+EMPTY	tree.c	/^static TaggedString EMPTY = {LUA_T_STRING, NULL, {{NOT_USED, NOT_USED}},$/;"	v	file:
+EOZ	zio.h	20;"	d
+EQOP	opcode.h	/^EQOP,\/*			y x		(x==y)? 1 : nil  *\/$/;"	e	enum:__anon7
+FIELDS_PER_FLUSH	opcode.h	15;"	d
+FREE	fallback.c	/^  enum {LOCK, HOLD, FREE, COLLECTED} status;$/;"	e	enum:ref::__anon1	file:
+FixCode	undump.c	/^static void FixCode(Byte* code, Byte* end)	\/* swap words *\/$/;"	f	file:
+GARBAGE_BLOCK	table.c	32;"	d	file:
+GEOP	opcode.h	/^GEOP,\/*			y x		(x>=y)? 1 : nil  *\/$/;"	e	enum:__anon7
+GTOP	opcode.h	/^GTOP,\/*			y x		(x>y)? 1 : nil  *\/$/;"	e	enum:__anon7
+HOLD	fallback.c	/^  enum {LOCK, HOLD, FREE, COLLECTED} status;$/;"	e	enum:ref::__anon1	file:
+Hash	hash.h	/^typedef struct Hash {$/;"	s
+Hash	hash.h	/^} Hash;$/;"	t	typeref:struct:Hash
+ID_CHUNK	undump.h	17;"	d
+ID_FUN	undump.h	18;"	d
+ID_STR	undump.h	20;"	d
+ID_VAR	undump.h	19;"	d
+IFFJMP	opcode.h	/^IFFJMP,\/*	w	x		-		(x==nil)? PC+=w  *\/$/;"	e	enum:__anon7
+IFFUPJMP	opcode.h	/^IFFUPJMP,\/*	w	x		-		(x==nil)? PC-=w  *\/$/;"	e	enum:__anon7
+IM	fallback.h	/^extern struct IM {$/;"	s
+IMS	fallback.h	/^} IMS;$/;"	t	typeref:enum:__anon2
+IM_ADD	fallback.h	/^  IM_ADD,$/;"	e	enum:__anon2
+IM_CONCAT	fallback.h	/^  IM_CONCAT,$/;"	e	enum:__anon2
+IM_DIV	fallback.h	/^  IM_DIV,$/;"	e	enum:__anon2
+IM_FUNCTION	fallback.h	/^  IM_FUNCTION$/;"	e	enum:__anon2
+IM_GC	fallback.h	/^  IM_GC,$/;"	e	enum:__anon2
+IM_GE	fallback.h	/^  IM_GE,$/;"	e	enum:__anon2
+IM_GETGLOBAL	fallback.h	/^  IM_GETGLOBAL,$/;"	e	enum:__anon2
+IM_GETTABLE	fallback.h	/^  IM_GETTABLE = 0,$/;"	e	enum:__anon2
+IM_GT	fallback.h	/^  IM_GT,$/;"	e	enum:__anon2
+IM_INDEX	fallback.h	/^  IM_INDEX,$/;"	e	enum:__anon2
+IM_LE	fallback.h	/^  IM_LE,$/;"	e	enum:__anon2
+IM_LT	fallback.h	/^  IM_LT,$/;"	e	enum:__anon2
+IM_MUL	fallback.h	/^  IM_MUL,$/;"	e	enum:__anon2
+IM_N	fallback.h	36;"	d
+IM_POW	fallback.h	/^  IM_POW,$/;"	e	enum:__anon2
+IM_SETGLOBAL	fallback.h	/^  IM_SETGLOBAL,$/;"	e	enum:__anon2
+IM_SETTABLE	fallback.h	/^  IM_SETTABLE,$/;"	e	enum:__anon2
+IM_SUB	fallback.h	/^  IM_SUB,$/;"	e	enum:__anon2
+IM_UNM	fallback.h	/^  IM_UNM,$/;"	e	enum:__anon2
+IMtable_size	fallback.c	/^static int IMtable_size = 0;$/;"	v	file:
+INCS	luac/Makefile	/^INCS= -I$(INC) $(EXTRA_INCS) -I..$/;"	m
+INTFUNCSIZE	inout.c	393;"	d	file:
+IS	luac/luac.c	39;"	d	file:
+IntPoint	types.h	/^typedef unsigned int IntPoint; \/* unsigned with same size as a pointer (for hashing) *\/$/;"	t
+IsMain	undump.h	13;"	d
+JMP	opcode.h	/^JMP,\/*		w	-		-		PC+=w  *\/$/;"	e	enum:__anon7
+LEOP	opcode.h	/^LEOP,\/*			y x		(x<y)? 1 : nil  *\/$/;"	e	enum:__anon7
+LOCK	fallback.c	/^  enum {LOCK, HOLD, FREE, COLLECTED} status;$/;"	e	enum:ref::__anon1	file:
+LTOP	opcode.h	/^LTOP,\/*			y x		(x<y)? 1 : nil  *\/$/;"	e	enum:__anon7
+LUA	Makefile	/^LUA= ..$/;"	m
+LUA	luac/Makefile	/^LUA= ..\/..$/;"	m
+LUA_T_ARRAY	opcode.h	/^ LUA_T_ARRAY    = -6,  \/* array==table *\/$/;"	e	enum:__anon6
+LUA_T_CFUNCTION	opcode.h	/^ LUA_T_CFUNCTION= -4,$/;"	e	enum:__anon6
+LUA_T_CMARK	opcode.h	/^ LUA_T_CMARK    = -2,$/;"	e	enum:__anon6
+LUA_T_FUNCTION	opcode.h	/^ LUA_T_FUNCTION = -5,$/;"	e	enum:__anon6
+LUA_T_LINE	opcode.h	/^ LUA_T_LINE     = -1,$/;"	e	enum:__anon6
+LUA_T_MARK	opcode.h	/^ LUA_T_MARK     = -3,$/;"	e	enum:__anon6
+LUA_T_NIL	opcode.h	/^ LUA_T_NIL      = -9,$/;"	e	enum:__anon6
+LUA_T_NUMBER	opcode.h	/^ LUA_T_NUMBER   = -8,$/;"	e	enum:__anon6
+LUA_T_STRING	opcode.h	/^ LUA_T_STRING   = -7,$/;"	e	enum:__anon6
+LUA_T_USERDATA	opcode.h	/^ LUA_T_USERDATA = 0$/;"	e	enum:__anon6
+LinkFunctions	luac/print.c	/^void LinkFunctions(TFunc* m)$/;"	f
+LoadBlock	undump.c	/^static void* LoadBlock(int size, ZIO* Z)$/;"	f	file:
+LoadChunk	undump.c	/^static void LoadChunk(ZIO* Z)$/;"	f	file:
+LoadFunction	undump.c	/^static void LoadFunction(ZIO* Z)$/;"	f	file:
+LoadHeader	undump.c	/^static void LoadHeader(ZIO* Z)$/;"	f	file:
+LoadNewString	undump.c	/^static char* LoadNewString(ZIO* Z)$/;"	f	file:
+LoadSignature	undump.c	/^static void LoadSignature(ZIO* Z)$/;"	f	file:
+LoadSize	undump.c	/^static int LoadSize(ZIO* Z)$/;"	f	file:
+LoadString	undump.c	/^static char* LoadString(ZIO* Z)$/;"	f	file:
+LoadWord	undump.c	/^static int LoadWord(ZIO* Z)$/;"	f	file:
+LocStr	luac/print.c	126;"	d	file:
+LocStr	luac/print.c	313;"	d	file:
+LocVar	func.h	/^typedef struct LocVar$/;"	s
+LocVar	func.h	/^} LocVar;$/;"	t	typeref:struct:LocVar
+Long	types.h	/^typedef signed long  Long;  \/* 32 bits *\/$/;"	t
+Long	types.h	24;"	d
+MARK	luamem.c	71;"	d	file:
+MAX_C_BLOCKS	opcode.c	679;"	d	file:
+MAX_IFS	lex.c	27;"	d	file:
+MAX_INT	types.h	22;"	d
+MAX_WORD	types.h	21;"	d
+MINBUFF	lex.c	16;"	d	file:
+MINUSOP	opcode.h	/^MINUSOP,\/*		x		-x  *\/$/;"	e	enum:__anon7
+MULTOP	opcode.h	/^MULTOP,\/*		y x		x*y  *\/$/;"	e	enum:__anon7
+MULT_RET	opcode.h	117;"	d
+Main	undump.c	/^static TFunc* Main=NULL;			\/* functions in a chunk *\/$/;"	v	file:
+NOPCODES	luac/print.h	79;"	d
+NOTOP	opcode.h	/^NOTOP,\/*		x		(x==nil)? 1 : nil  *\/$/;"	e	enum:__anon7
+NOT_USED	tree.h	12;"	d
+NULL	luamem.h	11;"	d
+NUM_HASHS	tree.c	20;"	d	file:
+NUM_TYPES	opcode.h	35;"	d
+Node	hash.h	/^} Node;$/;"	t	typeref:struct:node
+OBJS	Makefile	/^OBJS=	auxlib.o\\$/;"	m
+OBJS	luac/Makefile	/^OBJS= dump.o luac.o print.o$/;"	m
+ONFJMP	opcode.h	/^ONFJMP,\/*	w	x		-		(x==nil)? PC+=w  *\/$/;"	e	enum:__anon7
+ONTJMP	opcode.h	/^ONTJMP,\/*	w	x		-		(x!=nil)? PC+=w  *\/$/;"	e	enum:__anon7
+OpCode	opcode.h	/^} OpCode;$/;"	t	typeref:enum:__anon7
+OpCodeName	luac/print.h	/^static char* OpCodeName[]={	\/* ATTENTION: same order as enum in opcode.h *\/$/;"	v
+POP	opcode.h	/^POP,\/*			x		-  *\/$/;"	e	enum:__anon7
+POWOP	opcode.h	/^POWOP,\/*		y x		x^y  *\/$/;"	e	enum:__anon7
+PRAGMASIZE	lex.c	112;"	d	file:
+PUSH0	opcode.h	/^PUSH0,\/*		-		0.0  *\/$/;"	e	enum:__anon7
+PUSH1	opcode.h	/^PUSH1,\/*		-		1.0  *\/$/;"	e	enum:__anon7
+PUSH2	opcode.h	/^PUSH2,\/*		-		2.0  *\/$/;"	e	enum:__anon7
+PUSHBYTE	opcode.h	/^PUSHBYTE,\/*	b	-		(float)b  *\/$/;"	e	enum:__anon7
+PUSHFLOAT	opcode.h	/^PUSHFLOAT,\/*	f	-		f  *\/$/;"	e	enum:__anon7
+PUSHFUNCTION	opcode.h	/^PUSHFUNCTION,\/*	p	-		FUN(p)  *\/$/;"	e	enum:__anon7
+PUSHGLOBAL	opcode.h	/^PUSHGLOBAL,\/*	w	-		VAR[w]  *\/$/;"	e	enum:__anon7
+PUSHINDEXED	opcode.h	/^PUSHINDEXED,\/*		i t		t[i]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL	opcode.h	/^PUSHLOCAL,\/*	b	-		LOC[b]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL0	opcode.h	/^PUSHLOCAL0,\/*		-		LOC[0]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL1	opcode.h	/^PUSHLOCAL1,\/*		-		LOC[1]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL2	opcode.h	/^PUSHLOCAL2,\/*		-		LOC[2]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL3	opcode.h	/^PUSHLOCAL3,\/*		-		LOC[3]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL4	opcode.h	/^PUSHLOCAL4,\/*		-		LOC[4]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL5	opcode.h	/^PUSHLOCAL5,\/*		-		LOC[5]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL6	opcode.h	/^PUSHLOCAL6,\/*		-		LOC[6]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL7	opcode.h	/^PUSHLOCAL7,\/*		-		LOC[7]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL8	opcode.h	/^PUSHLOCAL8,\/*		-		LOC[8]  *\/$/;"	e	enum:__anon7
+PUSHLOCAL9	opcode.h	/^PUSHLOCAL9,\/*		-		LOC[9]  *\/$/;"	e	enum:__anon7
+PUSHNIL	opcode.h	/^PUSHNIL,\/*		-		nil  *\/$/;"	e	enum:__anon7
+PUSHSELF	opcode.h	/^PUSHSELF,\/*	w	t		t t[STR[w]]  *\/$/;"	e	enum:__anon7
+PUSHSTRING	opcode.h	/^PUSHSTRING,\/*	w	-		STR[w]  *\/$/;"	e	enum:__anon7
+PUSHWORD	opcode.h	/^PUSHWORD,\/*	w	-		(float)w  *\/$/;"	e	enum:__anon7
+PrepJump	lua.y	/^PrepJump : \/* empty *\/$/;"	l
+PrintCode	luac/print.c	/^static void PrintCode(TFunc* tf)$/;"	f	file:
+PrintFunction	luac/print.c	/^void PrintFunction(TFunc* tf, TFunc* Main)$/;"	f
+PrintLocals	luac/print.c	/^static void PrintLocals(LocVar* v, int n)$/;"	f	file:
+REHASH_LIMIT	hash.c	26;"	d	file:
+RESERVEDSIZE	lex.c	94;"	d	file:
+RETCODE	opcode.h	/^RETCODE,\/*	b	-		-  *\/$/;"	e	enum:__anon7
+RETCODE0	opcode.h	/^RETCODE0,$/;"	e	enum:__anon7
+Ref	opcode.c	46;"	d	file:
+SETLINE	opcode.h	/^SETLINE,\/*	w	-		-		LINE=w  *\/$/;"	e	enum:__anon7
+SIGNATURE	undump.h	21;"	d
+SIZE_PREF	inout.c	86;"	d	file:
+SLIB	Makefile	/^SLIB= $(LIB)\/liblua.a$/;"	m
+SRCS	Makefile	/^SRCS=	auxlib.c\\$/;"	m
+SRCS	luac/Makefile	/^SRCS= dump.c luac.c print.c luac.h print.h$/;"	m
+STACK_LIMIT	opcode.c	31;"	d	file:
+STACK_SIZE	opcode.c	28;"	d	file:
+STOREGLOBAL	opcode.h	/^STOREGLOBAL,\/*	w	x		-		VAR[w]=x  *\/$/;"	e	enum:__anon7
+STOREINDEXED	opcode.h	/^STOREINDEXED,\/*	b	v a_b...a_1 i t	a_b...a_1 i t	t[i]=v  *\/$/;"	e	enum:__anon7
+STOREINDEXED0	opcode.h	/^STOREINDEXED0,\/*	v i t		-		t[i]=v  *\/$/;"	e	enum:__anon7
+STORELIST	opcode.h	/^STORELIST,\/*	b c	v_b...v_1 t	-		t[i+c*FPF]=v_i  *\/$/;"	e	enum:__anon7
+STORELIST0	opcode.h	/^STORELIST0,\/*	b	v_b...v_1 t	-		t[i]=v_i  *\/$/;"	e	enum:__anon7
+STORELOCAL	opcode.h	/^STORELOCAL,\/*	b	x		-		LOC[b]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL0	opcode.h	/^STORELOCAL0,\/*		x		-		LOC[0]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL1	opcode.h	/^STORELOCAL1,\/*		x		-		LOC[1]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL2	opcode.h	/^STORELOCAL2,\/*		x		-		LOC[2]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL3	opcode.h	/^STORELOCAL3,\/*		x		-		LOC[3]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL4	opcode.h	/^STORELOCAL4,\/*		x		-		LOC[4]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL5	opcode.h	/^STORELOCAL5,\/*		x		-		LOC[5]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL6	opcode.h	/^STORELOCAL6,\/*		x		-		LOC[6]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL7	opcode.h	/^STORELOCAL7,\/*		x		-		LOC[7]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL8	opcode.h	/^STORELOCAL8,\/*		x		-		LOC[8]=x  *\/$/;"	e	enum:__anon7
+STORELOCAL9	opcode.h	/^STORELOCAL9,\/*		x		-		LOC[9]=x  *\/$/;"	e	enum:__anon7
+STOREMAP	opcode.h	/^STOREMAP\/*	b	v_b k_b ...v_1 k_1 t	-	t[k_i]=v_i  *\/$/;"	e	enum:__anon7
+STORERECORD	opcode.h	/^STORERECORD,\/*	b$/;"	e	enum:__anon7
+SUBOP	opcode.h	/^SUBOP,\/*		y x		x-y  *\/$/;"	e	enum:__anon7
+SawStr	luac/dump.c	/^static int SawStr(int i, int at)$/;"	f	file:
+SawVar	luac/dump.c	/^static int SawVar(int i, int at)$/;"	f	file:
+StkId	opcode.c	/^typedef int StkId;  \/* index to stack elements *\/$/;"	t	file:
+StrLoc	luac/luac.h	16;"	d
+StrStr	luac/luac.h	15;"	d
+Symbol	table.h	/^} Symbol;$/;"	t	typeref:struct:__anon9
+T	luac/Makefile	/^T=$(BIN)\/luac$/;"	m
+TEST_FLOAT	undump.h	24;"	d
+TEST_WORD	undump.h	23;"	d
+TFunc	func.h	/^typedef struct TFunc$/;"	s
+TFunc	func.h	/^} TFunc;$/;"	t	typeref:struct:TFunc
+TObject	opcode.h	/^typedef struct TObject$/;"	s
+TObject	opcode.h	/^} TObject;$/;"	t	typeref:struct:TObject
+TagDefault	hash.c	28;"	d	file:
+TaggedString	tree.h	/^typedef struct TaggedString$/;"	s
+TaggedString	tree.h	/^} TaggedString;$/;"	t	typeref:struct:TaggedString
+ThreadCode	luac/dump.c	/^static void ThreadCode(Byte* code, Byte* end)$/;"	f	file:
+UPJMP	opcode.h	/^UPJMP,\/*	w	-		-		PC-=w  *\/$/;"	e	enum:__anon7
+Unthread	undump.c	/^static void Unthread(Byte* code, int i, int v)$/;"	f	file:
+VARARGS	opcode.h	/^VARARGS,\/*	b	v_b...v_1	{v_1...v_b;n=b}  *\/$/;"	e	enum:__anon7
+VERSION	undump.h	22;"	d
+Value	opcode.h	/^} Value;$/;"	t	typeref:union:__anon8
+VarLoc	luac/luac.h	14;"	d
+VarStr	luac/luac.h	13;"	d
+Word	types.h	/^typedef unsigned short Word;  \/* unsigned 16 bits *\/$/;"	t
+Word	types.h	18;"	d
+ZBSIZE	zio.h	37;"	d
+ZIO	zio.h	/^typedef struct zio ZIO;$/;"	t	typeref:struct:zio
+a	opcode.h	/^ struct Hash    *a;$/;"	m	union:__anon8	typeref:struct:__anon8::Hash
+adjustC	opcode.c	194;"	d	file:
+adjust_top	opcode.c	190;"	d	file:
+adjust_top_aux	opcode.c	/^static void adjust_top_aux (StkId newtop)$/;"	f	file:
+adjust_varargs	opcode.c	/^static void adjust_varargs (StkId first_extra_arg)$/;"	f	file:
+assert	luamem.c	68;"	d	file:
+auxlib_h	auxlib.h	6;"	d
+avalue	opcode.h	142;"	d
+base	opcode.c	/^  StkId base;  \/* when Lua calls C or C calls Lua, points to *\/$/;"	m	struct:C_Lua_Stack	file:
+block	lua.y	/^block    : {$<vInt>$ = nlocalvar;} statlist ret $/;"	l
+body	lua.y	/^body :  '(' parlist ')' block END$/;"	l
+buffer	zio.h	/^ unsigned char buffer[ZBSIZE];		\/* buffer *\/$/;"	m	struct:zio
+callC	opcode.c	/^static StkId callC (lua_CFunction func, StkId base)$/;"	f	file:
+callHook	opcode.c	/^static void callHook (StkId base, lua_Type type, int isreturn)$/;"	f	file:
+callIM	opcode.c	/^static void callIM (TObject *f, int nParams, int nResults)$/;"	f	file:
+call_arith	opcode.c	/^static void call_arith (IMS event)$/;"	f	file:
+call_binTM	opcode.c	/^static void call_binTM (IMS event, char *msg)$/;"	f	file:
+call_nilIM	table.c	/^static void call_nilIM (void)$/;"	f	file:
+checkCparams	opcode.c	/^static void checkCparams (int nParams)$/;"	f	file:
+checkcond	lex.c	/^static int checkcond (char *buff)$/;"	f	file:
+checkfunc	table.c	/^static int checkfunc (TObject *o)$/;"	f	file:
+checktag	fallback.c	/^static void checktag (int tag)$/;"	f	file:
+chunk	lua.y	/^chunk	: chunklist ret ;$/;"	l
+chunklist	lua.y	/^chunklist : \/* empty *\/$/;"	l
+code	func.h	/^  Byte		*code;$/;"	m	struct:TFunc
+codeEM	luamem.h	16;"	d
+comparison	opcode.c	/^static void comparison (lua_Type ttype_less, lua_Type ttype_equal, $/;"	f	file:
+compile	luac/luac.c	/^static void compile(char* filename)$/;"	f	file:
+condition	lex.c	/^  int condition;  \/* true if $if condition is true *\/$/;"	m	struct:__anon4	file:
+constantEM	luamem.h	18;"	d
+constindex	tree.h	/^      Word constindex;  \/* != NOT_USED  if this is a constant *\/$/;"	m	struct:TaggedString::__anon11::__anon12
+current	lex.c	/^static int current;  \/* look ahead character *\/$/;"	v	file:
+currvars	func.c	/^static LocVar *currvars = NULL;$/;"	v	file:
+decinit	lua.y	/^decinit	  : \/* empty *\/  { $$ = 0; }$/;"	l
+dimensions	hash.c	/^static Long dimensions[] = $/;"	v	file:
+do_call	opcode.c	/^static void do_call (StkId base, int nResults)$/;"	f	file:
+do_callinc	opcode.c	/^static void do_callinc (int nResults)$/;"	f	file:
+do_compile	luac/luac.c	/^static void do_compile(ZIO* z)$/;"	f	file:
+do_dump	luac/luac.c	/^static void do_dump(TFunc* Main)$/;"	f	file:
+do_protectedrun	opcode.c	/^static int do_protectedrun (int nResults)$/;"	f	file:
+do_undump	luac/luac.c	/^static void do_undump(ZIO* z)$/;"	f	file:
+do_unprotectedrun	opcode.c	/^static void do_unprotectedrun (lua_CFunction f, int nParams, int nResults)$/;"	f	file:
+dumping	luac/luac.c	/^static int dumping=1;			\/* dump bytecodes? *\/$/;"	v	file:
+elsepart	lex.c	/^  int elsepart;  \/* true if its in the $else part *\/$/;"	m	struct:__anon4	file:
+elsepart	lua.y	/^elsepart : \/* empty *\/$/;"	l
+emptyslots	hash.c	/^static int emptyslots (Hash *t)$/;"	f	file:
+errorFB	fallback.c	/^static void errorFB (void)$/;"	f	file:
+errorJmp	opcode.c	/^static  jmp_buf *errorJmp = NULL; \/* current error recover point *\/$/;"	v	file:
+errorim	fallback.c	/^static TObject errorim = {LUA_T_CFUNCTION, {stderrorim}};$/;"	v	file:
+expr	lua.y	/^expr :  '(' expr ')'  { $$ = $2; }$/;"	l
+expr1	lua.y	/^expr1	 : expr { adjust_functioncall($1, 1); }$/;"	l
+exprlist	lua.y	/^exprlist  :	\/* empty *\/		{ $$ = 0; }$/;"	l
+exprlist1	lua.y	/^exprlist1 :  expr	{ if ($1 != 0) $$ = $1; else $$ = -1; }$/;"	l
+f	opcode.h	/^ lua_CFunction f;$/;"	m	union:__anon8
+fallback_h	fallback.h	6;"	d
+ffield	lua.y	/^ffield      : ffieldkey '=' expr1$/;"	l
+ffieldkey	lua.y	/^ffieldkey   : '[' expr1 ']'$/;"	l
+ffieldlist	lua.y	/^ffieldlist  : \/* empty *\/ { $$ = 0; }$/;"	l
+ffieldlist1	lua.y	/^ffieldlist1 : ffield			{$$=1;}$/;"	l
+fieldlist	lua.y	/^fieldlist  : lfieldlist$/;"	l
+filbuf	zio.h	/^ int (*filbuf)(ZIO* z);$/;"	m	struct:zio
+fileName	func.h	/^  char		*fileName;$/;"	m	struct:TFunc
+fillvalids	fallback.c	/^static void fillvalids (IMS e, TObject *func)$/;"	f	file:
+func	auxlib.h	/^  lua_CFunction func;$/;"	m	struct:luaL_reg
+func	inout.c	/^  lua_CFunction func;$/;"	m	struct:__anon3	file:
+funcParams	lua.y	/^funcParams :	'(' exprlist ')'$/;"	l
+func_h	func.h	6;"	d
+funcname	lua.y	/^funcname	: var { $$ =$1; init_func(); }$/;"	l
+function	lua.y	/^function     : FUNCTION funcname body 	 $/;"	l
+function_root	func.c	/^static TFunc *function_root = NULL;$/;"	v	file:
+functioncall	lua.y	/^functioncall : funcvalue funcParams$/;"	l
+functofind	table.c	/^static TObject *functofind;$/;"	v	file:
+funcvalue	lua.y	/^funcvalue    : varexp { $$ = 0; }$/;"	l
+fvalue	opcode.h	143;"	d
+gc_block	table.c	/^static long gc_block = GARBAGE_BLOCK;$/;"	v	file:
+gc_nentity	table.c	/^static long gc_nentity = 0;  \/* total of strings, arrays, etc *\/$/;"	v	file:
+get_code	opcode.h	157;"	d
+get_float	opcode.h	156;"	d
+get_word	opcode.h	155;"	d
+getglobal	opcode.c	/^static void getglobal (Word n)$/;"	f	file:
+getnarg	inout.c	/^static int getnarg (lua_Object table)$/;"	f	file:
+grow	tree.c	/^static void grow (stringtable *tb)$/;"	f	file:
+growstack	opcode.c	/^static void growstack (void)$/;"	f	file:
+growvector	luamem.h	35;"	d
+hash	tree.c	/^  TaggedString **hash;$/;"	m	struct:__anon10	file:
+hash	tree.c	/^static unsigned long hash (char *s, int tag)$/;"	f	file:
+hash	tree.h	/^  unsigned long hash;  \/* 0 if not initialized *\/$/;"	m	struct:TaggedString
+hash_h	hash.h	8;"	d
+hashcreate	hash.c	/^static Hash *hashcreate (int nhash)$/;"	f	file:
+hashdelete	hash.c	/^static void hashdelete (Hash *t)$/;"	f	file:
+hashindex	hash.c	/^static long int hashindex (TObject *ref)$/;"	f	file:
+hashnext	hash.c	/^static void hashnext (Hash *t, int i)$/;"	f	file:
+hashnodecreate	hash.c	/^static Node *hashnodecreate (int nhash)$/;"	f	file:
+htag	hash.h	/^  int htag;$/;"	m	struct:Hash
+i	opcode.h	/^ int	       i;$/;"	m	union:__anon8
+iflevel	lex.c	/^static int iflevel;  \/* level of nested $if's *\/$/;"	v	file:
+ifskip	lex.c	/^static void ifskip (void)$/;"	f	file:
+ifstate	lex.c	/^} ifstate[MAX_IFS];$/;"	v	typeref:struct:__anon4	file:
+inclinenumber	lex.c	/^static void inclinenumber (void)$/;"	f	file:
+incr_top	opcode.c	52;"	d	file:
+init_entry	fallback.c	/^static void init_entry (int tag)$/;"	f	file:
+initial_stack	opcode.c	/^static TObject initial_stack;$/;"	v	file:
+initialize	tree.c	/^static void initialize (void)$/;"	f	file:
+initialized	tree.c	/^static int initialized = 0;$/;"	v	file:
+inout_h	inout.h	7;"	d
+inrange	luamem.c	79;"	d	file:
+insert	tree.c	/^static TaggedString *insert (char *buff, int tag, stringtable *tb)$/;"	f	file:
+int_funcs	inout.c	/^} int_funcs[] = {$/;"	v	typeref:struct:__anon3	file:
+int_method	fallback.h	/^  TObject int_method[IM_N];$/;"	m	struct:IM
+lastF	undump.c	/^static TFunc* lastF=NULL;$/;"	v	file:
+last_tag	fallback.c	/^static int last_tag = LUA_T_NIL;  \/* ORDER LUA_T *\/$/;"	v	file:
+lastcomma	lua.y	/^lastcomma  : \/* empty *\/ $/;"	l
+lexEM	luamem.h	20;"	d
+lex_h	lex.h	8;"	d
+lex_z	lex.c	/^static ZIO *lex_z;$/;"	v	file:
+lfieldlist	lua.y	/^lfieldlist  : \/* empty *\/ { $$ = 0; }$/;"	l
+lfieldlist1	lua.y	/^lfieldlist1 : expr1  {$$=1;}$/;"	l
+line	func.h	/^  int       line;$/;"	m	struct:LocVar
+lineDefined	func.h	/^  int		lineDefined;$/;"	m	struct:TFunc
+lineHook	opcode.c	/^static void lineHook (int line)$/;"	f	file:
+listhead	hash.c	/^static Hash *listhead = NULL;$/;"	v	file:
+listing	luac/luac.c	/^static int listing=0;			\/* list bytecodes? *\/$/;"	v	file:
+localdeclist	lua.y	/^localdeclist  : NAME {store_localvar($1, 0); $$ = 1;}$/;"	l
+locvars	func.h	/^  LocVar        *locvars;$/;"	m	struct:TFunc
+lua2C	opcode.c	/^  StkId lua2C; \/* points to first element of "array" lua2C *\/$/;"	m	struct:C_Lua_Stack	file:
+luaI_Address	opcode.c	/^TObject *luaI_Address (lua_Object o)$/;"	f
+luaI_IMtable	fallback.c	/^struct IM *luaI_IMtable = NULL;$/;"	v	typeref:struct:IM
+luaI_addReserved	lex.c	/^void luaI_addReserved (void)$/;"	f
+luaI_assert	inout.c	/^static void luaI_assert (void)$/;"	f	file:
+luaI_auxsyntaxerror	lex.c	/^static void luaI_auxsyntaxerror (char *s)$/;"	f	file:
+luaI_auxsynterrbf	lex.c	/^static void luaI_auxsynterrbf (char *s, char *token)$/;"	f	file:
+luaI_buffer	luamem.c	/^void* luaI_buffer (unsigned long size)$/;"	f
+luaI_call	inout.c	/^static void luaI_call (void)$/;"	f	file:
+luaI_checkevent	fallback.c	/^static int luaI_checkevent (char *name, char *list[])$/;"	f	file:
+luaI_closelocalvars	func.c	/^void luaI_closelocalvars (TFunc *func)$/;"	f
+luaI_collectgarbage	inout.c	/^static void luaI_collectgarbage (void)$/;"	f	file:
+luaI_createfixedstring	table.c	/^TaggedString *luaI_createfixedstring (char *name)$/;"	f
+luaI_createudata	tree.c	/^TaggedString *luaI_createudata (void *udata, int tag)$/;"	f
+luaI_dorun	opcode.c	/^int luaI_dorun (TFunc *tf)$/;"	f
+luaI_efectivetag	fallback.c	/^int luaI_efectivetag (TObject *o)$/;"	f
+luaI_error	inout.c	/^static void luaI_error (void)$/;"	f	file:
+luaI_eventname	fallback.c	/^char *luaI_eventname[] = {  \/* ORDER IM *\/$/;"	v
+luaI_findconstant	table.c	/^Word luaI_findconstant (TaggedString *t)$/;"	f
+luaI_findconstantbyname	table.c	/^Word  luaI_findconstantbyname (char *name)$/;"	f
+luaI_findstring	auxlib.c	/^int luaI_findstring (char *name, char *list[])$/;"	f
+luaI_findsymbol	table.c	/^Word luaI_findsymbol (TaggedString *t)$/;"	f
+luaI_findsymbolbyname	table.c	/^Word luaI_findsymbolbyname (char *name)$/;"	f
+luaI_free	luamem.c	/^void luaI_free (void *block)$/;"	f
+luaI_freefunc	func.c	/^void luaI_freefunc (TFunc *f)$/;"	f
+luaI_funccollector	func.c	/^TFunc *luaI_funccollector (long *acum)$/;"	f
+luaI_funcfree	func.c	/^void luaI_funcfree (TFunc *l)$/;"	f
+luaI_gcIM	opcode.c	/^void luaI_gcIM (TObject *o)$/;"	f
+luaI_geterrorim	fallback.c	/^TObject *luaI_geterrorim (void)$/;"	f
+luaI_getglobal	inout.c	/^static void luaI_getglobal (void)$/;"	f	file:
+luaI_getim	fallback.h	45;"	d
+luaI_getimbyObj	fallback.h	46;"	d
+luaI_getlocalname	func.c	/^char *luaI_getlocalname (TFunc *func, int local_number, int line)$/;"	f
+luaI_getref	fallback.c	/^TObject *luaI_getref (int ref)$/;"	f
+luaI_gettagmethod	fallback.c	/^void luaI_gettagmethod (void)$/;"	f
+luaI_globaldefined	table.c	/^int luaI_globaldefined (char *name)$/;"	f
+luaI_growvector	luamem.c	/^int luaI_growvector (void **block, unsigned long nelems, int size,$/;"	f
+luaI_hashcallIM	hash.c	/^void luaI_hashcallIM (Hash *l)$/;"	f
+luaI_hashcollector	hash.c	/^Hash *luaI_hashcollector (long *acum)$/;"	f
+luaI_hashfree	hash.c	/^void luaI_hashfree (Hash *frees)$/;"	f
+luaI_initTFunc	func.c	/^void luaI_initTFunc (TFunc *f)$/;"	f
+luaI_initconstant	table.c	/^void luaI_initconstant (void)$/;"	f
+luaI_initfallbacks	fallback.c	/^void luaI_initfallbacks (void)$/;"	f
+luaI_initsymbol	table.c	/^void luaI_initsymbol (void)$/;"	f
+luaI_inittree	tree.c	/^static void luaI_inittree (void)$/;"	f	file:
+luaI_insertfunction	func.c	/^void luaI_insertfunction (TFunc *f)$/;"	f
+luaI_invalidaterefs	fallback.c	/^void luaI_invalidaterefs (void)$/;"	f
+luaI_ismarked	table.c	/^int luaI_ismarked (TObject *o)$/;"	f
+luaI_malloc	luamem.h	32;"	d
+luaI_nextvar	table.c	/^void luaI_nextvar (void)$/;"	f
+luaI_predefine	inout.c	/^void luaI_predefine (void)$/;"	f
+luaI_print	inout.c	/^static void luaI_print (void)$/;"	f	file:
+luaI_pushobject	opcode.c	/^void luaI_pushobject (TObject *o)$/;"	f
+luaI_rawgetglobal	inout.c	/^static void luaI_rawgetglobal (void)$/;"	f	file:
+luaI_rawsetglobal	inout.c	/^static void luaI_rawsetglobal (void)$/;"	f	file:
+luaI_realloc	luamem.c	/^void *luaI_realloc (void *oldblock, unsigned long size)$/;"	f
+luaI_realtag	fallback.c	/^void luaI_realtag (int tag)$/;"	f
+luaI_redimension	hash.c	/^int luaI_redimension (int nhash)$/;"	f
+luaI_ref	fallback.c	/^int luaI_ref (TObject *object, int lock)$/;"	f
+luaI_registerlocalvar	func.c	/^void luaI_registerlocalvar (TaggedString *varname, int line)$/;"	f
+luaI_seterrormethod	fallback.c	/^void luaI_seterrormethod (void)$/;"	f
+luaI_setfallback	fallback.c	/^void luaI_setfallback (void)$/;"	f
+luaI_setglobal	inout.c	/^static void luaI_setglobal (void)$/;"	f	file:
+luaI_setparsedfile	inout.c	/^void luaI_setparsedfile (char *name)$/;"	f
+luaI_settag	fallback.c	/^void luaI_settag (int tag, TObject *o)$/;"	f
+luaI_settagmethod	fallback.c	/^void luaI_settagmethod (void)$/;"	f
+luaI_strcallIM	tree.c	/^void luaI_strcallIM (TaggedString *l)$/;"	f
+luaI_strcollector	tree.c	/^TaggedString *luaI_strcollector (long *acum)$/;"	f
+luaI_strfree	tree.c	/^void luaI_strfree (TaggedString *l)$/;"	f
+luaI_syntaxerror	lex.c	/^void luaI_syntaxerror (char *s)$/;"	f
+luaI_tostring	inout.c	/^static void luaI_tostring (void)$/;"	f	file:
+luaI_travfallbacks	fallback.c	/^char *luaI_travfallbacks (int (*fn)(TObject *))$/;"	f
+luaI_travlock	fallback.c	/^void luaI_travlock (int (*fn)(TObject *))$/;"	f
+luaI_type	inout.c	/^static void luaI_type (void)$/;"	f	file:
+luaI_typenames	inout.c	/^char *luaI_typenames[] = { \/* ORDER LUA_T *\/$/;"	v
+luaI_undump	undump.c	/^int luaI_undump(ZIO* Z)$/;"	f
+luaI_undump1	undump.c	/^TFunc* luaI_undump1(ZIO* Z)$/;"	f
+luaI_unregisterlocalvar	func.c	/^void luaI_unregisterlocalvar (int line)$/;"	f
+luaIl_newtag	inout.c	/^static void luaIl_newtag (void)$/;"	f	file:
+luaIl_settag	inout.c	/^static void luaIl_settag (void)$/;"	f	file:
+luaL_arg_check	auxlib.c	/^void luaL_arg_check(int cond, int numarg, char *extramsg)$/;"	f
+luaL_check_number	auxlib.c	/^double luaL_check_number (int numArg)$/;"	f
+luaL_check_string	auxlib.c	/^char *luaL_check_string (int numArg)$/;"	f
+luaL_openlib	auxlib.c	/^void luaL_openlib (struct luaL_reg *l, int n)$/;"	f
+luaL_opt_number	auxlib.c	/^double luaL_opt_number (int numArg, double def)$/;"	f
+luaL_opt_string	auxlib.c	/^char *luaL_opt_string (int numArg, char *def)$/;"	f
+luaL_reg	auxlib.h	/^struct luaL_reg {$/;"	s
+luaL_verror	auxlib.c	/^void luaL_verror (char *fmt, ...)$/;"	f
+luaY_lex	lex.c	/^int luaY_lex (void)$/;"	f
+lua_Type	opcode.h	/^} lua_Type;$/;"	t	typeref:enum:__anon6
+lua_beginblock	opcode.c	/^void lua_beginblock (void)$/;"	f
+lua_callfunction	opcode.c	/^int lua_callfunction (lua_Object function)$/;"	f
+lua_callhook	opcode.c	/^lua_CHFunction lua_callhook = NULL;$/;"	v
+lua_checkstack	opcode.c	98;"	d	file:
+lua_collectgarbage	table.c	/^long lua_collectgarbage (long limit)$/;"	f
+lua_constant	table.c	/^TaggedString **lua_constant = NULL;$/;"	v
+lua_createarray	hash.c	/^Hash *lua_createarray (int nhash)$/;"	f
+lua_createstring	tree.c	/^TaggedString *lua_createstring (char *str)$/;"	f
+lua_createtable	opcode.c	/^lua_Object lua_createtable (void)$/;"	f
+lua_currentline	opcode.c	/^int lua_currentline (lua_Function func)$/;"	f
+lua_doFILE	inout.c	/^int lua_doFILE (FILE *f, int bin)$/;"	f
+lua_dobuffer	inout.c	/^int lua_dobuffer (char *buff, int size)$/;"	f
+lua_dofile	inout.c	/^int lua_dofile (char *filename)$/;"	f
+lua_domain	opcode.c	/^int lua_domain (void)$/;"	f
+lua_dostring	inout.c	/^int lua_dostring (char *str)$/;"	f
+lua_endblock	opcode.c	/^void lua_endblock (void)$/;"	f
+lua_equalObj	hash.c	/^int lua_equalObj (TObject *t1, TObject *t2)$/;"	f
+lua_error	opcode.c	/^void lua_error (char *s)$/;"	f
+lua_execute	opcode.c	/^static StkId lua_execute (Byte *pc, StkId base)$/;"	f	file:
+lua_funcinfo	func.c	/^void lua_funcinfo (lua_Object func, char **filename, int *linedefined)$/;"	f
+lua_getcfunction	opcode.c	/^lua_CFunction lua_getcfunction (lua_Object object)$/;"	f
+lua_getglobal	opcode.c	/^lua_Object lua_getglobal (char *name)$/;"	f
+lua_getlocal	opcode.c	/^lua_Object lua_getlocal (lua_Function func, int local_number, char **name)$/;"	f
+lua_getnumber	opcode.c	/^real lua_getnumber (lua_Object object)$/;"	f
+lua_getobjname	table.c	/^char *lua_getobjname (lua_Object o, char **name)$/;"	f
+lua_getref	opcode.c	/^lua_Object lua_getref (int ref)$/;"	f
+lua_getstring	opcode.c	/^char *lua_getstring (lua_Object object)$/;"	f
+lua_gettable	opcode.c	/^lua_Object lua_gettable (void)$/;"	f
+lua_gettagmethod	opcode.c	/^lua_Object lua_gettagmethod (int tag, char *event)$/;"	f
+lua_getuserdata	opcode.c	/^void *lua_getuserdata (lua_Object object)$/;"	f
+lua_hashdefine	hash.c	/^TObject *lua_hashdefine (Hash *t, TObject *ref)$/;"	f
+lua_hashget	hash.c	/^TObject *lua_hashget (Hash *t, TObject *ref)$/;"	f
+lua_hashmark	hash.c	/^void lua_hashmark (Hash *h)$/;"	f
+lua_initstack	opcode.c	/^static void lua_initstack (void)$/;"	f	file:
+lua_internaldofile	inout.c	/^static void lua_internaldofile (void)$/;"	f	file:
+lua_internaldostring	inout.c	/^static void lua_internaldostring (void)$/;"	f	file:
+lua_iscfunction	opcode.c	/^int lua_iscfunction (lua_Object o)$/;"	f
+lua_isfunction	opcode.c	/^int lua_isfunction (lua_Object o)$/;"	f
+lua_isnil	opcode.c	/^int lua_isnil (lua_Object o)$/;"	f
+lua_isnumber	opcode.c	/^int lua_isnumber (lua_Object o)$/;"	f
+lua_isstring	opcode.c	/^int lua_isstring (lua_Object o)$/;"	f
+lua_istable	opcode.c	/^int lua_istable (lua_Object o)$/;"	f
+lua_isuserdata	opcode.c	/^int lua_isuserdata (lua_Object o)$/;"	f
+lua_linehook	opcode.c	/^lua_LHFunction lua_linehook = NULL;$/;"	v
+lua_linenumber	inout.c	/^Word lua_linenumber;$/;"	v
+lua_lua2C	opcode.c	/^lua_Object lua_lua2C (int number)$/;"	f
+lua_markobject	table.c	/^int lua_markobject (TObject *o)$/;"	f
+lua_maxconstant	table.c	/^static Long lua_maxconstant = 0;$/;"	v	file:
+lua_maxsymbol	table.c	/^static Long lua_maxsymbol = 0;$/;"	v	file:
+lua_message	opcode.c	/^static void lua_message (char *s)$/;"	f	file:
+lua_nconstant	table.c	/^Word lua_nconstant = 0;$/;"	v
+lua_newtag	fallback.c	/^int lua_newtag (void)$/;"	f
+lua_next	hash.c	/^void lua_next (void)$/;"	f
+lua_ntable	table.c	/^Word lua_ntable = 0;$/;"	v
+lua_obj2number	inout.c	/^static void lua_obj2number (void)$/;"	f	file:
+lua_pack	table.c	/^void lua_pack (void)$/;"	f
+lua_parsedfile	inout.c	/^char *lua_parsedfile;$/;"	v
+lua_pop	opcode.c	/^lua_Object lua_pop (void)$/;"	f
+lua_pushcfunction	opcode.c	/^void lua_pushcfunction (lua_CFunction fn)$/;"	f
+lua_pushnil	opcode.c	/^void lua_pushnil (void)$/;"	f
+lua_pushnumber	opcode.c	/^void lua_pushnumber (real n)$/;"	f
+lua_pushobject	opcode.c	/^void lua_pushobject (lua_Object o)$/;"	f
+lua_pushstring	opcode.c	/^void lua_pushstring (char *s)$/;"	f
+lua_pushusertag	opcode.c	/^void lua_pushusertag (void *u, int tag)$/;"	f
+lua_rawgetglobal	opcode.c	/^lua_Object lua_rawgetglobal (char *name)$/;"	f
+lua_rawgettable	opcode.c	/^lua_Object lua_rawgettable (void)$/;"	f
+lua_rawsetglobal	opcode.c	/^void lua_rawsetglobal (char *name)$/;"	f
+lua_rawsettable	opcode.c	/^void lua_rawsettable (void)$/;"	f
+lua_ref	opcode.c	/^int lua_ref (int lock)$/;"	f
+lua_seterrormethod	opcode.c	/^lua_Object lua_seterrormethod (void)$/;"	f
+lua_setfallback	opcode.c	/^lua_Object lua_setfallback (char *name, lua_CFunction fallback)$/;"	f
+lua_setglobal	opcode.c	/^void lua_setglobal (char *name)$/;"	f
+lua_setinput	lex.c	/^void lua_setinput (ZIO *z)$/;"	f
+lua_setlocal	opcode.c	/^int lua_setlocal (lua_Function func, int local_number)$/;"	f
+lua_settable	opcode.c	/^void lua_settable (void)$/;"	f
+lua_settag	opcode.c	/^void lua_settag (int tag)$/;"	f
+lua_settagmethod	opcode.c	/^lua_Object lua_settagmethod (int tag, char *event)$/;"	f
+lua_stackedfunction	opcode.c	/^lua_Function lua_stackedfunction (int level)$/;"	f
+lua_strconc	opcode.c	/^static char *lua_strconc (char *l, char *r)$/;"	f	file:
+lua_table	table.c	/^Symbol *lua_table = NULL;$/;"	v
+lua_tag	opcode.c	/^int lua_tag (lua_Object lo)$/;"	f
+lua_tonumber	opcode.c	/^static int lua_tonumber (TObject *obj)$/;"	f	file:
+lua_tostring	opcode.c	/^static int lua_tostring (TObject *obj)$/;"	f	file:
+lua_travstack	opcode.c	/^void lua_travstack (int (*fn)(TObject *))$/;"	f
+lua_travsymbol	table.c	/^static char *lua_travsymbol (int (*fn)(TObject *))$/;"	f	file:
+lua_unref	fallback.c	/^void lua_unref (int ref)$/;"	f
+luamem_h	luamem.h	8;"	d
+luatag	inout.c	/^static void luatag (void)$/;"	f	file:
+main	luac/luac.c	/^int main(int argc, char* argv[])$/;"	f
+mark	hash.h	/^  char mark;$/;"	m	struct:Hash
+markall	table.c	/^static void markall (void)$/;"	f	file:
+markarray	hash.c	19;"	d	file:
+marked	func.h	/^  int		marked;$/;"	m	struct:TFunc
+marked	tree.h	/^  int marked;   \/* for garbage collection; never collect (nor change) if > 1 *\/$/;"	m	struct:TaggedString
+maxcurrvars	func.c	/^static int maxcurrvars = 0;$/;"	v	file:
+memEM	luamem.h	23;"	d
+message	luamem.c	/^static void message (void)$/;"	f	file:
+n	opcode.h	/^ real          n;$/;"	m	union:__anon8
+n	zio.h	/^ int n;					\/* bytes still unread *\/$/;"	m	struct:zio
+name	auxlib.h	/^  char *name;$/;"	m	struct:luaL_reg
+name	inout.c	/^  char *name;$/;"	m	struct:__anon3	file:
+name	lex.c	/^    char *name;$/;"	m	struct:__anon5	file:
+new	luamem.h	33;"	d
+newone	tree.c	/^static TaggedString *newone(char *buff, int tag, unsigned long h)$/;"	f	file:
+newvector	luamem.h	34;"	d
+next	func.h	/^  struct TFunc	*next;$/;"	m	struct:TFunc	typeref:struct:TFunc::TFunc
+next	hash.h	/^  struct Hash *next;$/;"	m	struct:Hash	typeref:struct:Hash::Hash
+next	lex.c	22;"	d	file:
+next	tree.h	/^  struct TaggedString *next;$/;"	m	struct:TaggedString	typeref:struct:TaggedString::TaggedString
+nhash	hash.c	17;"	d	file:
+nhash	hash.h	/^  int nhash;$/;"	m	struct:Hash
+nilFB	fallback.c	/^static void nilFB (void) { }$/;"	f	file:
+node	hash.c	21;"	d	file:
+node	hash.h	/^  Node *node;$/;"	m	struct:Hash
+node	hash.h	/^typedef struct node {$/;"	s
+nodevector	hash.c	20;"	d	file:
+num	opcode.c	/^  int num;     \/* size of "array" lua2C *\/$/;"	m	struct:C_Lua_Stack	file:
+numCblocks	opcode.c	/^static int numCblocks = 0;$/;"	v	file:
+numblocks	luamem.c	/^static unsigned long numblocks = 0;$/;"	v	file:
+numcurrvars	func.c	/^static int numcurrvars = 0;$/;"	v	file:
+nuse	hash.c	18;"	d	file:
+nuse	hash.h	/^  int nuse;$/;"	m	struct:Hash
+nuse	tree.c	/^  int nuse;  \/* number of elements (including EMPTYs) *\/$/;"	m	struct:__anon10	file:
+nvalue	opcode.h	139;"	d
+o	fallback.c	/^  TObject o;$/;"	m	struct:ref	file:
+object	table.h	/^ TObject  object;$/;"	m	struct:__anon9
+opcode_h	opcode.h	7;"	d
+open_stack	opcode.c	/^static void open_stack (int nelems)$/;"	f	file:
+p	zio.h	/^ unsigned char* p;			\/* current position in buffer *\/$/;"	m	struct:zio
+packresults	inout.c	/^static void packresults (void)$/;"	f	file:
+par	lua.y	/^par : NAME	{ add_localvar($1); $$ = 0; }$/;"	l
+parlist	lua.y	/^parlist  :	\/* empty *\/ { $$ = close_parlist(0); }$/;"	l
+parlist1	lua.y	/^parlist1 :	par		  { $$ = $1; }$/;"	l
+passresults	inout.c	/^static int passresults (void)$/;"	f	file:
+present	hash.c	/^static int present (Hash *t, TObject *key)$/;"	f	file:
+pushsubscript	opcode.c	/^static void pushsubscript (void)$/;"	f	file:
+put_luaObject	opcode.c	/^static lua_Object put_luaObject (TObject *o)$/;"	f	file:
+put_luaObjectonTop	opcode.c	/^static lua_Object put_luaObjectonTop (void)$/;"	f	file:
+rawgettable	inout.c	/^static void rawgettable (void)$/;"	f	file:
+rawsettable	inout.c	/^static void rawsettable (void)$/;"	f	file:
+rcs_auxlib	auxlib.c	/^char *rcs_auxlib="$Id: auxlib.c,v 1.5 1997\/04\/14 15:30:03 roberto Exp $";$/;"	v
+rcs_dump	luac/dump.c	/^char* rcs_dump="$Id: dump.c,v 1.20 1997\/06\/19 14:56:04 lhf Exp $";$/;"	v
+rcs_fallback	fallback.c	/^char *rcs_fallback="$Id: fallback.c,v 2.9 1997\/06\/23 18:27:53 roberto Exp $";$/;"	v
+rcs_hash	hash.c	/^char *rcs_hash="$Id: hash.c,v 2.43 1997\/05\/14 18:38:29 roberto Exp $";$/;"	v
+rcs_inout	inout.c	/^char *rcs_inout="$Id: inout.c,v 2.69 1997\/06\/27 22:38:49 roberto Exp $";$/;"	v
+rcs_lex	lex.c	/^char *rcs_lex = "$Id: lex.c,v 3.5 1997\/06\/16 16:50:22 roberto Exp $";$/;"	v
+rcs_luac	luac/luac.c	/^char* rcs_luac="$Id: luac.c,v 1.23 1997\/06\/20 20:34:04 lhf Exp $";$/;"	v
+rcs_luamem	luamem.c	/^char *rcs_luamem = "$Id: luamem.c,v 1.16 1997\/04\/01 21:23:20 roberto Exp $";$/;"	v
+rcs_opcode	opcode.c	/^char *rcs_opcode="$Id: opcode.c,v 4.15 1997\/06\/26 21:40:57 roberto Exp $";$/;"	v
+rcs_print	luac/print.c	/^char* rcs_print="$Id: print.c,v 1.17 1997\/06\/25 17:07:28 lhf Exp $";$/;"	v
+rcs_table	table.c	/^char *rcs_table="$Id: table.c,v 2.72 1997\/06\/17 18:09:31 roberto Exp $";$/;"	v
+rcs_tree	tree.c	/^char *rcs_tree="$Id: tree.c,v 1.28 1997\/06\/11 14:24:40 roberto Exp $";$/;"	v
+rcs_undump	undump.c	/^char* rcs_undump="$Id: undump.c,v 1.24 1997\/06\/17 18:19:17 roberto Exp $";$/;"	v
+read_long_string	lex.c	/^static int read_long_string (char *yytext, int buffsize)$/;"	f	file:
+readname	lex.c	/^static void readname (char *buff)$/;"	f	file:
+real	types.h	12;"	d
+ref	fallback.c	/^static struct ref {$/;"	s	file:
+ref	hash.c	22;"	d	file:
+ref	hash.h	/^ TObject ref;$/;"	m	struct:node
+refArray	fallback.c	/^} *refArray = NULL;$/;"	v	typeref:struct:ref	file:
+refEM	luamem.h	21;"	d
+refSize	fallback.c	/^static int refSize = 0;$/;"	v	file:
+rehash	hash.c	/^static void rehash (Hash *t)$/;"	f	file:
+reserved	lex.c	/^  } reserved [] = {$/;"	v	typeref:struct:__anon5	file:
+ret	lua.y	/^ret	: \/* empty *\/$/;"	l
+s	tree.h	/^    } s;$/;"	m	union:TaggedString::__anon11	typeref:struct:TaggedString::__anon11::__anon12
+s_avalue	opcode.h	151;"	d
+s_fvalue	opcode.h	152;"	d
+s_nvalue	opcode.h	148;"	d
+s_object	opcode.h	146;"	d
+s_svalue	opcode.h	149;"	d
+s_tsvalue	opcode.h	150;"	d
+s_ttype	opcode.h	147;"	d
+s_uvalue	opcode.h	153;"	d
+save	lex.c	23;"	d	file:
+save_and_next	lex.c	24;"	d	file:
+sc	lua.y	/^sc	 : \/* empty *\/ | ';' ;$/;"	l
+semicolonpart	lua.y	/^semicolonpart : \/* empty *\/$/;"	l
+setglobal	opcode.c	/^static void setglobal (Word n)$/;"	f	file:
+singlevar	lua.y	/^singlevar :	NAME$/;"	l
+size	func.h	/^  int		size;$/;"	m	struct:TFunc
+size	tree.c	/^  int size;$/;"	m	struct:__anon10	file:
+skip	lex.c	/^  int skip;  \/* true if part must be skiped *\/$/;"	m	struct:__anon4	file:
+skipspace	lex.c	/^static void skipspace (void)$/;"	f	file:
+stack	opcode.c	/^static TObject *stack = &initial_stack;$/;"	v	file:
+stackEM	luamem.h	19;"	d
+stackLimit	opcode.c	/^static TObject *stackLimit = &initial_stack+1;$/;"	v	file:
+stat	lua.y	/^stat   : IF expr1 THEN PrepJump block PrepJump elsepart END$/;"	l
+statlist	lua.y	/^statlist : \/* empty *\/$/;"	l
+status	fallback.c	/^  enum {LOCK, HOLD, FREE, COLLECTED} status;$/;"	m	struct:ref	typeref:enum:ref::__anon1	file:
+stderrorim	fallback.c	/^static void stderrorim (void)$/;"	f	file:
+storesubscript	opcode.c	/^static void storesubscript (TObject *t, int mode)$/;"	f	file:
+str	tree.h	/^  char str[1];   \/* \\0 byte already reserved *\/$/;"	m	struct:TaggedString
+string_root	tree.c	/^static stringtable string_root[NUM_HASHS];$/;"	v	file:
+stringtable	tree.c	/^} stringtable;$/;"	t	typeref:struct:__anon10	file:
+svalue	opcode.h	140;"	d
+swapfloat	undump.c	/^static int swapfloat=0;$/;"	v	file:
+swapword	undump.c	/^static int swapword=0;$/;"	v	file:
+symbolEM	luamem.h	17;"	d
+table	lua.y	/^table :$/;"	l
+tableEM	luamem.h	22;"	d
+table_h	table.h	8;"	d
+tag	tree.h	/^  int tag;  \/* if != LUA_T_STRING, this is a userdata *\/$/;"	m	struct:TaggedString
+tf	opcode.h	/^ TFunc         *tf;$/;"	m	union:__anon8
+token	lex.c	/^    int token;$/;"	m	struct:__anon5	file:
+tonumber	opcode.c	24;"	d	file:
+top	opcode.c	/^static TObject *top = &initial_stack;$/;"	v	file:
+tostring	inout.c	/^static char *tostring (lua_Object obj)$/;"	f	file:
+tostring	opcode.c	25;"	d	file:
+totalmem	luamem.c	/^static unsigned long totalmem = 0;$/;"	v	file:
+tree_h	tree.h	8;"	d
+ts	opcode.h	/^ TaggedString *ts;$/;"	m	union:__anon8
+tsvalue	opcode.h	141;"	d
+ttype	opcode.h	/^ lua_Type ttype;$/;"	m	struct:TObject
+ttype	opcode.h	138;"	d
+typeFB	fallback.c	/^static void typeFB (void)$/;"	f	file:
+types_h	types.h	7;"	d
+u	tree.h	/^  } u;$/;"	m	struct:TaggedString	typeref:union:TaggedString::__anon11
+u	zio.h	/^ void* u;				\/* additional data *\/$/;"	m	struct:zio
+undump	luac/luac.c	/^static void undump(char* filename)$/;"	f	file:
+undump_h	undump.h	8;"	d
+undumping	luac/luac.c	/^static int undumping=0;			\/* undump bytecodes? *\/$/;"	v	file:
+usage	luac/luac.c	/^static void usage(void)$/;"	f	file:
+v	tree.h	/^    void *v;  \/* if this is a userdata, here is its value *\/$/;"	m	union:TaggedString::__anon11
+val	hash.c	23;"	d	file:
+val	hash.h	/^ TObject val;$/;"	m	struct:node
+validevent	fallback.c	/^static int validevent (lua_Type t, int e)$/;"	f	file:
+validevents	fallback.c	/^static char validevents[NUM_TYPES][IM_N] = { \/* ORDER LUA_T, ORDER IM *\/$/;"	v	file:
+value	opcode.h	/^ Value value;$/;"	m	struct:TObject
+var	lua.y	/^var	  :	singlevar { $$ = $1; }$/;"	l
+varexp	lua.y	/^varexp	: var { lua_pushvar($1); }$/;"	l
+varindex	tree.h	/^      Word varindex;  \/* != NOT_USED  if this is a symbol *\/$/;"	m	struct:TaggedString::__anon11::__anon12
+varlist1	lua.y	/^varlist1  :	var			$/;"	l
+varname	func.h	/^  TaggedString *varname;           \/* NULL signals end of scope *\/$/;"	m	struct:LocVar
+varname	table.h	/^ TaggedString *varname;$/;"	m	struct:__anon9
+zFopen	zio.c	/^ZIO* zFopen(ZIO* z, FILE* f)$/;"	f
+zFopen	zio.h	15;"	d
+zffilbuf	zio.c	/^static int zffilbuf(ZIO* z)$/;"	f	file:
+zgetc	zio.h	30;"	d
+zio	zio.h	/^struct zio {$/;"	s
+zio_h	zio.h	8;"	d
+zmfilbuf	zio.c	/^static int zmfilbuf(ZIO* z)$/;"	f	file:
+zmopen	zio.c	/^ZIO* zmopen(ZIO* z, char* b, int size)$/;"	f
+zmopen	zio.h	17;"	d
+zread	zio.c	/^int zread(ZIO *z, void *b, int n)$/;"	f
+zread	zio.h	18;"	d
+zsopen	zio.c	/^ZIO* zsopen(ZIO* z, char* s)$/;"	f
+zsopen	zio.h	16;"	d
+zungetc	zio.h	31;"	d
